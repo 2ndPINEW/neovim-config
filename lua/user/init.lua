@@ -375,6 +375,12 @@ local config = {
     end,
     treesitter = { -- overrides `require("treesitter").setup(...)`
       -- ensure_installed = { "lua" },
+      highlight = {
+        enable = true,  -- syntax highlightを有効にする
+        disable = {     -- 一部の言語では無効にする
+        }
+      },
+      ensure_installed = 'all'
     },
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
