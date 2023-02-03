@@ -5,12 +5,12 @@ brew install tmux
 NerdFont確認
 brew install neovim
 brew install ripgrep
-git clone git@github.com:FukeKazki/alacritty-config.git ~/.config/alacritty
+git clone git@github.com:2ndPINEW/alacritty-config.git ~/.config/alacritty
 # alacrittyフォルダで
 tic xterm-256color-italic.terminfo
 alacritty再起動
-git clone git@github.com:FukeKazki/tmux-config.git ~/.config/tmux
-git clone git@github.com:FukeKazki/neovim-config.git ~/.config/nvim
+git clone git@github.com:2ndPINEW/tmux-config.git ~/.config/tmux
+git clone git@github.com:2ndPINEW/neovim-config.git ~/.config/nvim
 nvimきどう
 :PackerSync
 ```
