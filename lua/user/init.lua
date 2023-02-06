@@ -217,6 +217,8 @@ local config = {
       -- Tmux
       ["<Leader>ttk"] = { "<Cmd>call system('tmux kill-session')<CR>", desc = "Kill Session" },
       ["<Leader>ttr"] = { "<Cmd>call system('tmux respawn-pane -k')<CR>", desc = "Restart Neovim" },
+      ["<C-p>"] = { "<cmd>Telescope find_files<cr>", desc = "fined files" },
+      ["<C-g>"] = { "<cmd>Telescope live_grep<cr>", desc = "live grep"}
     },
     t = {
       -- setting a mapping to false will disable it
@@ -395,6 +397,11 @@ local config = {
         layout_config = {
           width = 0.99,
           height = 0.99,
+        },
+      },
+      pickers = {
+        find_files = {
+          theme = "ivy"
         },
       }
     },
