@@ -214,6 +214,9 @@ local config = {
       ["<Leader>gn"] = { "<Cmd>Neogit<CR>", desc = "Neogit" },
       -- quick save
       -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+      -- Tmux
+      ["<Leader>ttk"] = { "<Cmd>call system('tmux kill-session')<CR>", desc = "Kill Session" },
+      ["<Leader>ttr"] = { "<Cmd>call system('tmux respawn-pane -k')<CR>", desc = "Restart Neovim" },
     },
     t = {
       -- setting a mapping to false will disable it
