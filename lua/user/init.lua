@@ -217,6 +217,9 @@ local config = {
       -- Tmux
       ["<Leader>ttk"] = { "<Cmd>call system('tmux kill-session')<CR>", desc = "Kill Session" },
       ["<Leader>ttr"] = { "<Cmd>call system('tmux respawn-pane -k')<CR>", desc = "Restart Neovim" },
+      -- 前回開いてたの開くやつ
+      ["<Leader>fr"] = { "<Cmd>Telescope resume<CR>", desc = "resume" },
+      ["<C-r>"] = { "<Cmd>Telescope resume<CR>", desc = "resume" },
       ["<C-p>"] = { "<cmd>Telescope find_files<cr>", desc = "fined files" },
       ["<C-g>"] = { "<cmd>Telescope live_grep<cr>", desc = "live grep"}
     },
