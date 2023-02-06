@@ -387,6 +387,14 @@ local config = {
     ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
       -- ensure_installed = { "python" },
     },
+    ["telescope"] = {
+      defaults = {
+        layout_config = {
+          width = 0.99,
+          height = 0.99,
+        },
+      }
+    },
   },
 
   -- LuaSnip Options
